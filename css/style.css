@@ -1,0 +1,53 @@
+/* raleway-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/raleway-v29-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* плавное перемещение */
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  background-color: #241d1c;
+  color: #f6f3e3;
+  font-variant-numeric: lining-nums proportional-nums;              /* выравнивает цифры */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  /* aссessibility */
+  position: fixed;
+  transform: scale(0);
+}
+
+.container {
+  max-width: 1312px; /* +padding * 2     */
+  padding: 0 48px;
+  margin: 0 auto;
+}
+
+@media (max-width: 560px) {
+  .container {
+    padding: 0 24px;
+  }
+}
